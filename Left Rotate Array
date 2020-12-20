@@ -1,0 +1,19 @@
+    int[] arr = {1};
+		int r = 1;
+		int size = arr.Length;
+		int number = arr[size - 1];
+		int mod = r % size;
+		int[] temp = new int[size];
+		for (int i = 0; i < arr.Length; i++)
+		{
+		  temp[i] = arr[(i+mod)%size];
+		}
+
+		for (int i = 0; i < arr.Length; i++)
+		{
+			arr[i] = temp[i];
+		}
+		for (int i = 0; i < arr.Length; i++)
+		{
+			Console.WriteLine(arr[i]);
+		}
