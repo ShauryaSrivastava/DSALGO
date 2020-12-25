@@ -4,10 +4,10 @@ public static void RotateArray(int[] nums,int k)	{
         {
             a[(i+k) % nums.Length] = nums[i]; 
         }
-		for(int i=0;i<nums.Length;i++)
-		{
-			nums[i] = a[i];
-			Console.WriteLine(nums[i]); // Print Rotated Arrays
-		}
+	for(int i=0;i<nums.Length;i++)
+	{
+		nums[i] = a[i];
+		Console.WriteLine(nums[i]); // Print Rotated Arrays
+	}
 			
 }
