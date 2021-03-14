@@ -1,12 +1,11 @@
-    int[] arr = {1};
-		int r = 1;
-		int size = arr.Length;
-		int number = arr[size - 1];
-		int mod = r % size;
-		int[] temp = new int[size];
+  		int[] arr = {1}; // Array
+		int r = 1; // Number Of Rotations
+		int size = arr.Length; // Size Of Array
+		int mod = r % size; // Get Mod.
+		int[] temp = new int[size]; // Setting Up New Array
 		for (int i = 0; i < arr.Length; i++)
 		{
-		  temp[i] = arr[(i+mod)%size];
+		  temp[i] = arr[(i+mod)%size]; // (i + mod) % size => Calculate The Postion.
 		}
 
 		for (int i = 0; i < arr.Length; i++)
